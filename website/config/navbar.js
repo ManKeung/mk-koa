@@ -44,7 +44,7 @@ const navbar = [
         label: '🙈打赏'
     },
     {
-        href: 'https://gitee.com/mankeung/mk-react',
+        href: 'https://gitee.com/mankeung/mk-koa',
         label: 'Gitee',
         position: 'right'
     }
