@@ -1,0 +1,104 @@
+.page-log {
+    position: relative;
+    padding-left: 28px;
+    padding-bottom: 20px;
+
+    &::before {
+        top: 8.5 + 15px;
+        left: 7px;
+        position: absolute;
+        content: "";
+        display: block;
+        height: calc(100% - 23.5px);
+        width: 1px;
+        background-color: var(--ifm-color-emphasis-200);
+    }
+
+    &::after {
+        top:8.5px;
+        left: 0;
+        position: absolute;
+        content: "";
+        display: block;
+        width: 13px;
+        height: 13px;
+        background-color: var(--ifm-background-color);
+        border-radius: 50%;
+        position: absolute;
+        border: 1px solid var(--ifm-color-primary);
+    }
+
+    p {
+        padding: 0;
+        margin: 0;
+        line-height: normal;
+    }
+
+    ul {
+        margin: 0;
+        list-style-type: circle;
+    }
+
+    &--title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px!important;
+        margin: 0;
+        border: none;
+    }
+
+    &--time {
+        display: inline-block;
+        margin: 8px 0!important;
+        font-size: 85%;
+        background-color: #fff5f5!important;
+        border-radius: 3px;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        color: #fa795e!important;
+        padding: 2px 4px;
+    }
+
+    &--box {
+        display: flex;
+        flex-direction: column;
+
+        > li {
+            line-height: 1.8em;
+
+            > span {
+                display: inline-block;
+                padding: 4px 8px;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 12px;
+                border-width: 1px;
+                border-style: solid;
+                line-height: 1;
+                margin-right: 5px;
+
+                &.opt {
+                    color: #2979ff;
+                    background-color: #ecf5ff;
+                    border-color: #a0cfff;
+                }
+
+                &.add {
+                    color: #19be6b;
+                    background-color: #dbf1e1;
+                    border-color: #71d5a1;
+                }
+
+                &.bug {
+                    color: #f90;
+                    background-color: #fdf6ec;
+                    border-color: #fcbd71;
+                }
+            }
+
+            > p {
+                line-height: 1.8em;
+                display: inline;
+            }
+        }
+    }
+}

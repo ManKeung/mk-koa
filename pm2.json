@@ -1,0 +1,16 @@
+{
+    "apps": [{
+        "name": "mk-koa",
+        "script": "./main.js",
+        "cwd": "./",
+        "error_file": "./logs/prod_error.log",
+        "out_file": "./logs/prod_out.log",
+        "log_date_format": "YYYY-MM-DD HH:mm:ss",
+        "watch": [
+            "./main.js"
+        ],
+        "env": {
+            "NODE_ENV": "production"
+        }
+    }]
+}
